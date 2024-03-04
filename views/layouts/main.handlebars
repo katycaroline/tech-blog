@@ -13,8 +13,12 @@
     <header>
        <nav>
         <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
         <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
         <a href="/login">Login</a>
+        {{/if}}
       </nav>
       <h1>
         <a href="/">MVC Tech Blog</a>
@@ -27,7 +31,9 @@
       Thanks for visiting!
     </footer>
   </div>
+{{#if loggedIn}}
 <script src="/js/logout.js"></script>
+{{/if}}
 </body>
 
 </html>
