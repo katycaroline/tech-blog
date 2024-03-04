@@ -12,13 +12,27 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: white;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: gray;
+}
+
+header a:hover {
+ color: lightgrey; 
+}
+
+.home-title {
+  font-size: 3rem;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 5px 7px lightgray;
   }
   
   button {
@@ -33,12 +47,13 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: lightsteelblue;
   }
   
   .post-list {
     margin: 0;
     padding: 0;
+    list-style: none;
   }
   
   textarea, input {
@@ -75,11 +90,13 @@
   }
   
   header {
+    background-color: lightslategray;
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    font-size: 1.5rem;
   }
   
   header h1 {
@@ -89,6 +106,7 @@
   main {
     flex: 1;
     padding: 2% 4%;
+    background-color: gainsboro;
   }
   
   .btn-no-style {
@@ -118,14 +136,32 @@
   }
   
   .post {
+    background-color: lightskyblue;
     margin-bottom: 2%;
     line-height: 150%;
+    border-color: black;
+  border: solid;
+}
+
+.post-head {  
+  /* margin-bottom: 10px; */
+  padding: 2px;
+}
+
+.title {  
+  font-size: 150%;  
+  margin: 2px;
   }
   
-  .post .title span {
+  .meta {
     font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
+    font-size: 80%;
+    margin: 2px;
+  }
+  
+  .post-text {
+    background-color: whitesmoke;
+    padding: 3px;
   }
   
   .edit-link {
